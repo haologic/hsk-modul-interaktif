@@ -126,6 +126,42 @@ h1, h2, h3, p { margin: 0; }
 .option-item input { margin-top: 4px; }
 .arrange-box { display: grid; gap: 12px; margin-top: 14px; }
 .arrange-input { width: 100%; min-height: 48px; padding: 0 14px; border-radius: 14px; border: 1px solid rgba(61, 38, 21, 0.18); font: inherit; }
+.arrange-dropzone {
+  min-height: 62px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px dashed rgba(61, 38, 21, 0.24);
+  background: #fffdfa;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.answer-zone {
+  background: rgba(180, 69, 45, 0.04);
+}
+.arrange-placeholder {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+.word-bank {
+  background: var(--surface-soft);
+}
+.word-chip {
+  border: 1px solid rgba(61, 38, 21, 0.16);
+  background: #fff;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 10px 16px;
+  font: inherit;
+  font-family: var(--font-hanzi);
+  font-size: 1.05rem;
+  cursor: grab;
+  touch-action: manipulation;
+}
+.word-chip.dragging {
+  opacity: 0.55;
+}
 .submit-row { display: flex; justify-content: flex-end; }
 .result-shell { display: grid; gap: 16px; }
 .big-score { font-family: var(--font-display); font-size: 3rem; line-height: 1; }
