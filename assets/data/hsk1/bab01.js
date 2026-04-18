@@ -60,7 +60,8 @@ const hsk1Bab01 = [
   {
     label: "Bagian C",
     title: "Menyusun kalimat dari kata acak",
-    description: "Untuk versi awal, user mengetik hasil susunan kalimat. Nanti bisa dikembangkan menjadi drag and drop jika diperlukan.",
+    description: "Susun kalimat dengan drag and drop atau ketuk chip kata satu per satu jika memakai HP.",
+
     questions: [
       {
         id: "c1",
