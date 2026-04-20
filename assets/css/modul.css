@@ -97,6 +97,7 @@ h1, h2, h3, p { margin: 0; }
 .vocab-table th { font-size: 0.78rem; letter-spacing: 0.12em; color: var(--ink-soft); }
 .vocab-hanzi, .example-cn, .question-hanzi, .paragraph-cn { font-family: var(--font-hanzi); }
 .vocab-hanzi { font-size: 1.45rem; font-weight: 700; }
+.example-note { color: var(--ink-soft); margin-top: 4px; }
 .grammar-list { display: grid; gap: 18px; }
 .grammar-header { display: grid; grid-template-columns: 58px 1fr; gap: 16px; align-items: start; }
 .grammar-number {
