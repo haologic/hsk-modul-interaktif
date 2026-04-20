@@ -1,3 +1,7 @@
+function displayText(value, fallback = "Belum diisi") {
+  return value && String(value).trim() ? value : fallback;
+}
+
 function renderVocabTable(items) {
   const tbody = document.getElementById("vocab-table-body");
   const count = document.getElementById("vocab-count");
@@ -8,10 +12,10 @@ function renderVocabTable(items) {
       <td>${item.pinyin}</td>
       <td>${item.meaning}</td>
       <td>
-        <div class="example-cn">${item.exampleCn}</div>
-        <div>${item.examplePinyin}</div>
+        <div class="example-cn">${displayText(item.exampleCn, "Contoh kalimat menyusul")}</div>
+        <div class="example-note">${displayText(item.examplePinyin, "-")}</div>
       </td>
-      <td>${item.exampleId}</td>
+      <td>${displayText(item.exampleId, "Arti contoh menyusul")}</td>
     </tr>
   `).join("");
 
