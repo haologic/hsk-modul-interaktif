@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HSK 1 Bab 20 | haologic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/modul.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container topbar">
+        <a class="brand" href="../../menu.html">
+          <span class="brand-box">汉</span>
+          <span>
+            <strong>haologic</strong>
+            <small>HSK 1 Bab 20</small>
+          </span>
+        </a>
+        <nav class="inline-nav">
+          <a href="../../menu.html">Dashboard</a>
+          <a href="kosakata.html">Kosakata</a>
+          <a href="grammar.html">Grammar</a>
+          <a href="soal-bab01.html">Bab berikutnya</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-stack">
+      <section class="section-intro">
+        <p class="eyebrow">LATIHAN BAB 20</p>
+        <h1>Latihan interaktif per bab</h1>
+        <p>Struktur Bab 20 sudah siap dipakai. Nanti isinya tinggal diganti ke set soal final tanpa perlu membangun halaman dari nol lagi.</p>
+      </section>
+
+      <section id="quiz-root" class="quiz-shell"></section>
+      <section id="quiz-result" class="result-shell hidden"></section>
+    </main>
+  </div>
+
+  <script src="../../assets/data/hsk1/template-bab.js"></script>
+  <script src="../../assets/data/hsk1/bab20.js"></script>
+  <script src="../../assets/js/quiz-engine.js"></script>
+  <script>
+    renderQuiz({
+      rootId: "quiz-root",
+      resultId: "quiz-result",
+      title: "HSK 1 Bab 20",
+      sections: hsk1Bab20
+    });
+  </script>
+</body>
+</html>
